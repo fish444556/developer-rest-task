@@ -27,7 +27,11 @@ class ProductList extends React.Component {
 		               			<div className="description">{data.productdescriptionshort}</div>
 		               			<div className="since-date">2011-0923</div>
 		             		</Col>
-		             	 	<Col md={1} ><span className="glyphicon glyphicon-list"></span></Col>
+		             	 	<Col md={1} >
+		             	 		<span className="glyphicon glyphicon-list"></span>
+		             	 		<span className="badge badge-notify">4</span>
+		             	 		<span className="glyphicon glyphicon-chevron-right"></span>
+		             	 	</Col>
 		           		</Row>
 		         	</Grid>
 		        </li>

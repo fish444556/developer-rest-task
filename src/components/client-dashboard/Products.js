@@ -7,7 +7,8 @@ class Products extends React.Component {
     render(){
         return (
             <div>
-              <h1>Products</h1>
+              <h1>Products + </h1>
+              <h3>General Hospital</h3>
               <ProductList />
             </div>
         );
