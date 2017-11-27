@@ -75,3 +75,37 @@ div.dashboard-gauges {
 div.world-map {
 
 }
+
+.product-name {
+    color: $dark-brand-color;
+}
+
+.since-date {
+    color: $dark-grey;
+}
+
+.glyphicon-barcode, .glyphicon-list {
+    /*padding-top: ;*/
+}
+
+.glyphicon-barcode {
+    font-size: 40px;
+}
+
+.glyphicon-list {
+    color: $dark-grey;
+    font-size: 30px;
+}
+
+.product-list-item {
+    border-top: 1px solid $light-grey;
+    background-color: transparent;
+    min-width: 350px;
+    list-style-type: none;
+    padding-top: 20px;
+    margin: 15px;
+}
+
+.product-list-item-middle {
+    margin-top: -10px;
+}
