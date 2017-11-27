@@ -33,7 +33,11 @@ class DashboardPage extends React.Component {
             <Grid>
                 <Row className="show-grid">
                     <Col md={8} ><Overview /></Col>
-                    <Col md={4} ><Products /></Col>
+                    <Col md={4} >
+                        <Products
+                            generalhospical={this.state.data}
+                        />
+                    </Col>
                 </Row>
             </Grid>
         </div>

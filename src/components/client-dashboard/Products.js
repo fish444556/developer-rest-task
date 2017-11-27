@@ -5,9 +5,11 @@ import ProductList from './ProductList';
 
 class Products extends React.Component {
     render(){
+    	debugger
+    	console.log(this.props)
         return (
             <div>
-              <h1>Products + </h1>
+              <h1 className='product-title'>Products + </h1>
               <h3>General Hospital</h3>
               <ProductList />
             </div>

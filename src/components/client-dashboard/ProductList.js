@@ -1,5 +1,6 @@
 import React from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
+import ModalData from './ModalData';
 
 class ProductList extends React.Component {
 	renderProductList() {
@@ -45,6 +46,12 @@ class ProductList extends React.Component {
 				<ul>
 					{this.renderProductList()}
 				</ul>
+				<ModalData
+				 	closingmodal={this.props.closingmodal}
+				 	data={this.props.modal.data}
+				 	visible={this.props.modal.visiblevalue}
+				 	handlingmodal = {this.props.handlingmodal}
+				/>
 			</div>
 		);
 	}
