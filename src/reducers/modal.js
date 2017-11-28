@@ -1,18 +1,17 @@
-import { HANDLEMODAL } from '../actions/const';
+import { HANDLING_MODAL, CLOSING_MODAL } from './../actions/const';
 
 const modal = {
-	visibility: false,
-	data: []
+  visiblevalue: false,
+  data: []
 }
 
-export default function (state = modal, action) {
-	switch(action.type) {
-		case HANDLEMODAL:
-			return modalOpen = {
-				visibility: true,
-				data: action.payload.data
-			}
-		default:
-			return modal;
-	}
+export default function(state=modal, action){
+  switch(action.type){
+    case HANDLING_MODAL:
+      return Object.assign({},state,{visiblevalue:true,data:action.payload.data});
+
+    case CLOSING_MODAL:
+      return Object.assign({},state,{visiblevalue:false});
+    }
+  return state;
 }

@@ -1,8 +1,15 @@
-import { HANDLEMODAL } from '../../const';
+import {HANDLING_MODAL,CLOSING_MODAL} from './../const';
 
-export function handleModal(value) {
-	return {
-		type: HANDLEMODAL,
-		payload: value
-	};
+export function handlingmodal(value){
+  return{
+    type: HANDLING_MODAL,
+    payload: value
+  };
+}
+
+export function closingmodal(){
+  return{
+    type: CLOSING_MODAL,
+    payload: false
+  };
 }
