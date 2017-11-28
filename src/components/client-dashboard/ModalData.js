@@ -3,6 +3,8 @@ import { Modal } from 'react-bootstrap';
 import { Grid, Row, Col, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
+import { AnimatedPageWrapper } from '../../utils/animation/AnimatedPageWrapper';
+
 class ModalData extends React.Component{
 
   constructor(props) {
@@ -87,5 +89,7 @@ class ModalData extends React.Component{
     );
   }
 }
+
+// ModalData = AnimatedPageWrapper(ModalData);
 
 export default ModalData;
